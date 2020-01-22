@@ -1,0 +1,63 @@
+{
+  "name": "site-casamento",
+  "version": "1.0.0",
+  "description": "Site Casamento Luis e Ingrid em React",
+  "main": "index.js",
+  "repository": "https://github.com/luisalbertonunes/site-casamento",
+  "scripts": {
+    "bundle": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --mode development --open --hot --port 3000",
+    "build": "webpack --mode production",
+    "check-types": "tsc"
+  },
+  "keywords": [
+    "Luis",
+    "Ingrid",
+    "Casamento",
+    "React"
+  ],
+  "author": "Luis Nunes",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/preset-react": "^7.8.3",
+    "@babel/preset-typescript": "^7.8.3",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-styled-components": "^1.10.6",
+    "html-webpack-plugin": "^3.2.0",
+    "tslint": "^5.20.1",
+    "tslint-immutable": "^6.0.1",
+    "typescript": "^3.7.5",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  },
+  "dependencies": {
+    "@types/react": "^16.9.17",
+    "@types/react-dom": "^16.9.4",
+    "@types/react-router": "^5.1.4",
+    "@types/react-router-dom": "^5.1.3",
+    "@types/styled-components": "^4.4.2",
+    "captalys-core": "^2.3.30",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-router-dom": "^5.1.2",
+    "styled-components": "^5.0.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-typescript",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/proposal-class-properties",
+      "@babel/proposal-object-rest-spread",
+      "babel-plugin-styled-components"
+    ]
+  }
+}
