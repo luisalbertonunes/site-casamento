@@ -9,9 +9,8 @@ export const Routes = () => {
 		<BrowserRouter>
 			<GridInitial>
 				<FlexInitial area='Header'>
-					Header
 					<Menu />
-					<Link to="/about">teste</Link>
+					{/* <Link to="/about">teste</Link> */}
 				</FlexInitial>
 				<FlexInitial area='Content'>
 					<p>Content</p>
