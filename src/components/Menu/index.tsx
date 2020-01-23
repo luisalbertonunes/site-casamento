@@ -1,18 +1,20 @@
 import React from 'react';
-import { MenuStyle, MenuContainer } from './style';
-// import { Link } from 'captalys-core';
+import { MenuStyle, MenuContainer, MenuLink, MenuImg } from './style';
 
 export const Menu = () => {
-    return (
-        <MenuStyle>
-            <MenuContainer>
-                teste
-				teste
-				teste
+	return (
+		<MenuStyle>
+			<MenuContainer start='flex-start'>
+				<MenuLink to='/'>Home</MenuLink>
+				<MenuLink to='/'>Confirmar Presença</MenuLink>
+				<MenuLink to='/'>Localização</MenuLink>
 			</MenuContainer>
-            <MenuContainer>
-                teste2
+			<MenuContainer start='center'>
+				<MenuImg src='https://i.ibb.co/cwmjzBG/brasao.png' />
 			</MenuContainer>
-        </MenuStyle>
-    );
+			<MenuContainer start='flex-end'>
+				Faltam X dias!
+			</MenuContainer>
+		</MenuStyle>
+	);
 };

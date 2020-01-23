@@ -4,6 +4,6 @@ export const medias = {
             "Header"
             "Content"
             "Footer"
-        `, rows: '75px 1fr 100px'
+        `, rows: '80px 1fr 100px'
     }
 };
