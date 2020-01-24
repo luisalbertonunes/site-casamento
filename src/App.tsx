@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { Routes } from './routes';
+import { Routes } from './routes/routes';
 import { GlobalStyle } from './components';
 
 class App extends PureComponent {

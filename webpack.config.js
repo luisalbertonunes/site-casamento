@@ -27,11 +27,32 @@ module.exports = {
                     loader: 'babel-loader'
                 },
             },
+            //we use ttf-loader and file-loader(dependece of tff-loader) to load font files
+            {
+                test: /\.(ttf|eot|woff|woff2)$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: "fonts/[name].[ext]",
+                        },
+                    },
+                ]
+            },
+            //we use file-loader to load image files
+            {
+                test: /\.(png|jpe?g|gif|svg)$/i,
+                loader: 'file-loader',
+                options: {
+                    name: '[path][name].[ext]',
+                },
+            },
         ]
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './public/index.html'
+            template: './public/index.html',
+            favicon: './public/favicon.ico'
         })
     ]
 }

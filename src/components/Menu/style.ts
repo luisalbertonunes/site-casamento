@@ -35,8 +35,7 @@ export const MenuLink = styled(Link) <LinkProps>`
 `;
 
 export const MenuImg = styled(Image).attrs({
-	width: '100px',
-	height: '115px'
+	width: '70x'
 })`
 
 `;

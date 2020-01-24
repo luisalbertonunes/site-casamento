@@ -1,5 +1,6 @@
 import React from 'react';
 import { MenuStyle, MenuContainer, MenuLink, MenuImg } from './style';
+import Logo from '../../images/logo.svg';
 
 export const Menu = () => {
 	return (
@@ -10,7 +11,7 @@ export const Menu = () => {
 				<MenuLink to='/'>Localização</MenuLink>
 			</MenuContainer>
 			<MenuContainer start='center'>
-				<MenuImg src='https://i.ibb.co/cwmjzBG/brasao.png' />
+				<MenuImg src={Logo} />
 			</MenuContainer>
 			<MenuContainer start='flex-end'>
 				Faltam X dias!

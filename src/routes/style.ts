@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Grid, Flex } from 'captalys-core';
-import { medias } from './props.routes';
+import { medias } from './props';
 
 export const GridInitial = styled(Grid).attrs({ medias })`
     min-height:100vh;
@@ -11,5 +11,5 @@ export const GridInitial = styled(Grid).attrs({ medias })`
 
 export const FlexInitial = styled(Flex).attrs({
     alignItems: 'center',
-    width: '100%'
+    width: '100%',
 })``;
