@@ -26,7 +26,7 @@ export const MenuContainer = styled(Flex).attrs<DefaultMenuInterface>(props => (
 }))``;
 
 export const MenuLink = styled(Link) <LinkProps>`
-	padding: 20px;
+	padding-left: 20px;
 	color: #333;
 	text-decoration: none;
 	&:hover{
@@ -36,6 +36,14 @@ export const MenuLink = styled(Link) <LinkProps>`
 
 export const MenuImg = styled(Image).attrs({
 	width: '70x'
-})`
+})``;
 
+export const MenuText = styled.p<DefaultMenuInterface>`
+	color: #333;
+	margin: 0px;
+	padding: 20px;
+`;
+
+export const MenuTextSimple = styled.span<DefaultMenuInterface>`
+font-size: ${({ size }) => size ? size : '16px'}
 `;

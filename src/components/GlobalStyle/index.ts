@@ -12,7 +12,7 @@ export const GlobalStyle = createGlobalStyle`
         margin: 0;
         padding: 0;
         overflow-x: hidden;
-        a {
+        a, p {
             font-family: Fabada, Arial, Helvetica, sans-serif
         }
     }
