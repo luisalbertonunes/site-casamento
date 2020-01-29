@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Flex, Image } from 'captalys-core';
+import { Flex, Image, Button } from 'captalys-core';
 import { Link } from 'react-router-dom';
 import { LinkProps } from 'react-router-dom';
 import { DefaultMenuInterface } from './interface';
@@ -28,6 +28,7 @@ export const MenuContainer = styled(Flex).attrs<DefaultMenuInterface>(props => (
 export const MenuLink = styled(Link) <LinkProps>`
 	padding-left: 20px;
 	color: #333;
+	font-size: 16px;
 	text-decoration: none;
 	&:hover{
 		color: #F9C7B4;
@@ -42,8 +43,29 @@ export const MenuText = styled.p<DefaultMenuInterface>`
 	color: #333;
 	margin: 0px;
 	padding: 20px;
+	font-size: 16px;
 `;
 
 export const MenuTextSimple = styled.span<DefaultMenuInterface>`
-font-size: ${({ size }) => size ? size : '16px'}
+	font-size: ${({ size }) => size ? size : '16px'};
+`;
+
+export const MenuLinkButton = styled.button`
+	border:1px solid  #F9C7B4;
+	border-radius: 5px;
+	padding: 10px;
+	color: #333;
+	font-family: Fabada;
+	font-size: 15px;
+	background-color: white;
+	cursor: pointer;
+	outline: none;
+	transition: .3s;
+
+	&:hover{
+		color: white;
+		background-color:  #F9C7B4;
+	}
+
+
 `;

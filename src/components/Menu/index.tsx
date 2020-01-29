@@ -1,5 +1,5 @@
 import React from 'react';
-import { MenuStyle, MenuContainer, MenuLink, MenuImg, MenuText, MenuTextSimple } from './style';
+import { MenuStyle, MenuContainer, MenuLink, MenuImg, MenuText, MenuTextSimple, MenuLinkButton } from './style';
 import Logo from '../../images/logo.svg';
 
 const calcDaysBetweenDates = () => {
@@ -30,7 +30,9 @@ export const Menu = () => {
 				<MenuImg src={Logo} />
 			</MenuContainer>
 			<MenuContainer start='flex-end'>
-				<MenuText>Faltam <MenuTextSimple size='25px'>{calcDaysBetweenDates()}</MenuTextSimple> dias!</MenuText>
+				<MenuLinkButton>Lista de Presentes</MenuLinkButton>
+				<MenuText>Faltam <MenuTextSimple size='20px'>{calcDaysBetweenDates()}</MenuTextSimple> dias!</MenuText>
+
 			</MenuContainer>
 		</MenuStyle>
 	);
