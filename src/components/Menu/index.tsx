@@ -23,8 +23,8 @@ export const Menu = () => {
 		<MenuStyle>
 			<MenuContainer start='flex-start'>
 				<MenuLink to='/'>Home</MenuLink>
-				<MenuLink to='/'>Confirmar Presença</MenuLink>
-				<MenuLink to='/'>Localização</MenuLink>
+				<MenuLink to='/checkIn'>Confirmar Presença</MenuLink>
+				<MenuLink to='/local'>Localização</MenuLink>
 			</MenuContainer>
 			<MenuContainer start='center'>
 				<MenuImg src={Logo} />

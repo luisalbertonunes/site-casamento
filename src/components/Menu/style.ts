@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Flex, Image, Button } from 'captalys-core';
+import { Flex, Image, Button } from '@captalys-platform/core';
 import { Link } from 'react-router-dom';
 import { LinkProps } from 'react-router-dom';
 import { DefaultMenuInterface } from './interface';

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Grid, Flex } from 'captalys-core';
+import { Grid, Flex } from '@captalys-platform/core';
 import { medias } from './props';
 
 export const GridInitial = styled(Grid).attrs({ medias })`
